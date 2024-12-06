@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dev" class="org.shan.Dev" autowire="byType">
+        <!--        Setter injuction on xml config-->
+<!--        <property name="age" value="20"/>-->
+        <!--        Contructor injuction on xml config-->
+<!--        <constructor-arg value="14"/>-->
+<!--        <property name="laptop" ref="laptop"/>-->
+<!--        <property name="computer" ref="desktop"/>-->
+    </bean>
+    <bean id="computer" class="org.shan.Laptop">
+    </bean>
+    <bean id="desktop" class="org.shan.Desktop" primary="true">
+    </bean>
+</beans>
